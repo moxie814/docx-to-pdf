@@ -1,0 +1,29 @@
+ECHO is on.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docx to PDF Converter</title>
+</head>
+<body>
+    <h1>Docx to PDF Converter</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="file">Upload DOCX file:</label>
+        <input type="file" name="file" id="file" required>
+        <button type="submit">Upload and Convert</button>
+    </form>
+
+    {% if metadata %}
+    <h2>File Metadata</h2>
+    <p><strong>Author:</strong> {{ metadata.author }}</p>
+    <p><strong>Title:</strong> {{ metadata.title }}</p>
+    <p><strong>Subject:</strong> {{ metadata.subject }}</p>
+    <p><strong>Word Count:</strong> {{ metadata.word_count }}</p>
+
+    <h2>Download PDF</h2>
+    <a href="{{ url_for('download_file', filename=pdf_filename) }}">Download Converted PDF</a>
+    {% endif %}
+</body>
+</html>

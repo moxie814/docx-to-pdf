@@ -1,0 +1,22 @@
+ECHO is on.
+
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: docx-to-pdf
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: docx-to-pdf
+  template:
+    metadata:
+      labels:
+        app: docx-to-pdf
+    spec:
+      containers:
+      - name: docx-to-pdf
+        image: <your-docker-image>
+        ports:
+        - containerPort: 5000
