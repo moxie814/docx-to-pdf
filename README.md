@@ -1,6 +1,4 @@
-Here’s the entire content in a clean, uniform Markdown format:
 
-```markdown
 # DOCX to PDF Converter Web Application
 
 This is a web application that allows users to upload Microsoft Word documents (`.docx`), view file metadata, and download the converted file as a PDF. The project is built using Flask, `python-docx`, and `reportlab`. It is fully dockerized and includes deployment configurations for Kubernetes.
@@ -132,17 +130,8 @@ docx-to-pdf/
 
 ---
 
-## Screenshots
-
-### Home Page
-Upload `.docx` files and view metadata.
-
-![Home Page Screenshot](static/home_page.png)
-
 ### Download PDF
 Download the converted PDF file.
-
-![Download Page Screenshot](static/download_page.png)
 
 ---
 
@@ -162,18 +151,3 @@ Contributions are welcome! Please follow these steps:
 This project is licensed under the [MIT License](LICENSE).
 
 ---
-
-## Contact
-
-For any queries or issues, please contact **Your Name** at [your.email@example.com].
-
----
-
-### How to Customize
-
-1. Replace `yourusername` with your GitHub username.
-2. Add links or replace placeholders (e.g., screenshots and email).
-3. Include additional details if needed.
-```
-
-This content is fully formatted in Markdown and can be copied directly into your `README.md` file for a clean, professional look. Replace placeholders like `yourusername`, `Your Name`, and `your.email@example.com` with your actual details before using it.
