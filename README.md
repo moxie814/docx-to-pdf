@@ -45,8 +45,7 @@ cd docx-to-pdf
 
 Here is a sample README.md file for your GitHub repository:
 
-markdown
-Copy code
+
 # DOCX to PDF Converter Web Application
 
 This is a web application that allows users to upload Microsoft Word documents (`.docx`), view file metadata, and download the converted file as a PDF. The project is built using Flask, `python-docx`, and `reportlab`. It is fully dockerized and includes deployment configurations for Kubernetes.
