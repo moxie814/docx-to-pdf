@@ -1,4 +1,4 @@
-ECHO is on
+
 
 version: '3'
 services:
@@ -10,5 +10,6 @@ services:
       - .:/app
 
 
+# docker-compose up --build
 
 

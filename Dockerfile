@@ -1,4 +1,3 @@
-ECHO is on.
 
 
 # Use the official Python image from Docker Hub
